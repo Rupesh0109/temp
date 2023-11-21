@@ -1,0 +1,62 @@
+<%- include('../components/header',{title:'Laundry-Homepage',auth:auth,data:data,admin:admin});%>
+
+    <div class="flr">
+
+        <div class='sidebar pto'>
+            <h6 class='heading'>MAIN :</h6>
+            <div class='flc'>
+                <a href="/dashboard" onclick="selectDiv(this)" class="activee">
+                    <div class='flr'>
+                        <img class='icon' src='' alt></img>
+                        <h5>Dashboard</h5>
+                    </div>
+                </a>
+                <a href="/dashboard/details" onclick="selectDiv(this)" class="activee ">
+                    <div class='flr'>
+                        <img class='icon' src='' alt></img>
+                        <h5>Details</h5>
+                    </div>
+                </a>
+            </div>
+            <h6 class='heading'>INFORMATION :</h6>
+            <div class='flc'>
+                <a href="/dashboard/location" class="activee select" onclick="selectDiv(this)">
+                    <div class='flr'>
+                        <img class='icon' src='' alt></img>
+                        <h5 class="select">Check Bus</h5>
+                    </div>
+                </a>
+                <a href="/dashboard/history" class="activee" onclick="selectDiv(this)">
+                    <div class='flr'>
+                        <img class='icon' src='' alt></img>
+                        <h5>History</h5>
+                    </div>
+                </a>
+                <a href="/dashboard/attendence" onclick="selectDiv(this)" class="activee">
+                    <div class='flr'>
+                        <img class='icon' src='' alt></img>
+                        <h5>My Attendence</h5>
+                    </div>
+                </a>
+                <a href="/dashboard/support" class="activee" onclick="selectDiv(this)">
+                    <div class='flr'>
+                        <img class='icon' src='' alt></img>
+                        <h5>Help / Support</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="wifull my-4 py-2">
+            <h2 class="text-white mb-4">Your Bus <%= data.details.bus %> is Currently residing in.. </h2>
+
+            <div class="mauto">
+                <iframe width="90%" height="500" class="mauto"
+                    src="https://maps.google.com/maps?q=<%= Bus.lat %>,<%= Bus.lon %>&output=embed"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <%- include('../components/footer') %>

@@ -1,0 +1,518 @@
+body {
+    background: #1f1f38;
+    /* color: white; */
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#titl {
+    color: white;
+}
+
+.LoginBox {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+
+}
+
+.LoginBox1 {
+    position: relative;
+    width: 400px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    color: white
+}
+
+.InputBox {
+    padding-top: 1px;
+    width: 300px;
+    position: relative;
+    margin: 20px 0;
+    border-bottom: 2px solid white;
+}
+
+.InputBox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.InputBox input:focus~label,
+.InputBox input:valid~label {
+    top: -5px;
+}
+
+.InputBox input {
+    width: 100%;
+    padding-top: 5px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #4db5ff;
+    padding: 0 35px 0 5px;
+    position: relative;
+    z-index: 3;
+}
+
+.InputBox .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+#namewebsite{
+    font-size: x-large;
+    margin-left: 1rem;
+}
+.nameweb{
+    transition: all 400ms ease;
+}
+.nameweb:hover{
+    background-color: #1f1f38;
+    padding: 0 0.4rem;
+    color: #4db5ff;
+    border-radius: 0.5rem;
+    transition: all 400ms ease;
+}
+.RememberForgot {
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #4db5ff;
+    display: flex;
+    justify-content: center;
+}
+.pic{
+    border: 1.3px solid #1f1f38;
+    border-radius: 50%;
+    padding: 2px;
+    width: 3rem;
+    height: 3rem;
+ }
+ 
+ .pic>img {
+    margin-top: -2px;
+    margin-left: -2px;
+    width: 3rem;
+    height: 3rem;
+    scale: 0.6;
+    object-fit: contain;
+    transition: all 200ms ease;
+ }
+ 
+ .pic>img:hover {
+    scale: 1;
+    padding-left: 4px;
+ }
+.RememberForgot label input {
+    margin-right: 3px;
+}
+.wifully{
+    width: 100%;
+}
+.Link {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.Link:hover {
+    text-decoration: underline;
+}
+.pinner{
+    padding: 3rem 6rem 0 3rem;
+    margin-right: 4rem;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background: #4db5ff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+}
+.gp{
+    gap: 8px;
+    margin-top: 8px;
+}
+.RegisterLink {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.RegisterLink p .Reg {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.RegisterLink p .Reg:hover {
+    text-decoration: underline;
+}
+
+
+.LoginBox {
+    position: relative;
+    background: #1f1f38;
+    border-radius: 5px;
+}
+
+.LoginBox1 {
+    position: relative;
+    background: #1f1f38;
+    border-radius: 5px;
+}
+
+.glow::before,
+.glow::after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #e6fb04, #ff6600, #00ff66, #00ffff, #ff0fff, #ff0099, #ff3300, #099fff);
+    background-size: 400%;
+    width: calc(100% + 5px);
+    border-radius: 5px;
+    height: calc(100% + 5px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.glow::after {
+    filter: blur(30px);
+}
+
+.titlee {
+    margin-top: 1em;
+}
+
+.attribute {
+    margin-top: -2rem;
+}
+
+.RegBtn {
+    /* padding: 1rem; */
+    width: 300px;
+    text-align: center;
+    margin-top: -2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.flc {
+    display: flex;
+    flex-direction: column;
+}
+
+#nameerror {
+    padding: 0;
+    margin: 0;
+    font-size: small;
+}
+
+
+.spac {
+    margin-bottom: 2rem;
+}
+
+#bg {
+    background: #4db5ff;
+}
+
+.btnl {
+    color: rgb(26, 33, 56);
+    transition: all 400ms ease
+}
+
+.hl:hover {
+    background-color: rgb(26, 33, 56);
+    border-radius: 0.5rem;
+}
+
+.pic>img {
+    animation: slideTop 1s ease forwards;
+}
+
+
+:root {
+	--poppins: 'Poppins', sans-serif;
+	--lato: 'Lato', sans-serif;
+    --transition: all 400ms ease;
+
+	--light: #F9F9F9;
+	--blue: #3C91E6;
+	--light-blue: #CFE8FF;
+	--grey: #eee;
+	--dark-grey: #AAAAAA;
+	--dark: #342E37;
+	--red: #DB504A;
+	--yellow: #FFCE26;
+	--light-yellow: #FFF2C6;
+	--orange: #FD7238;
+	--light-orange: #FFE0D3;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.activee{
+    text-decoration: none;
+    padding: 0.3rem;
+    padding-top: 0.6rem;
+    border-radius: 0.4rem;    
+}
+
+.select{
+    background-color: #4db5ff;
+    color: rgb(26, 33, 56);
+}
+
+.naxtxt {
+    letter-spacing: 0.3px;
+    text-align: center;
+    text-decoration: none;
+  
+
+}
+.naxtxt:hover{
+    color: white;
+}
+.sidebar{
+    width: 20%;
+    padding-top: 15px;
+    padding: 15px;
+    border-right: 2px solid white;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+.flc{
+    display: flex;
+    flex-direction: column;
+}
+.flr{
+    display: flex;
+}
+
+/* card */
+.card{
+    width: 100px;
+    height: 150px;
+}
+
+.cardsec{
+    display: flex;
+    justify-content: space-between;
+}
+.heading{
+    margin-top: 2rem;
+}
+
+h3{
+    margin-bottom: 0.2rem;
+}
+.dimage{
+    width: 100px;
+    height: 100px;
+}
+.dbox{
+    width: 250px;
+}
+.cardsec{
+    display: flex;
+    align-items: center;
+    width: 250px;
+}
+.dcontent{
+    padding-left: 1rem;
+}
+.wifull{
+    width: 100%;
+    padding-right: 2rem;
+}
+.pto1{
+    padding-top: 1rem;
+}
+.chart{
+    width: 500px;
+    height: 100px;
+}
+h2{
+    color: #4db5ff;
+}
+h5{
+    color: white;
+}
+h6{
+    color: #4db5ff;
+}
+.wmax{
+    width: 100%;
+}
+
+
+
+.box-info {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 24px;
+	margin-top: 36px;
+    width: 100%;
+    height: 50%;
+    padding-right: 20px;
+}
+.box-info li {
+	padding: 24px;
+	background: var(--light);
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	grid-gap: 24px;
+}
+.box-info li .bx {
+	width: 80px;
+	height: 80px;
+	border-radius: 10px;
+	font-size: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box-info li:nth-child(1) .bx {
+	background: var(--light-blue);
+	color: var(--blue);
+}
+.box-info li:nth-child(2) .bx {
+	background: var(--light-yellow);
+	color: var(--yellow);
+}
+.box-info li:nth-child(3) .bx {
+	background: var(--light-orange);
+	color: var(--orange);
+}
+.box-info li .text h3 {
+	font-size: 24px;
+	font-weight: 600;
+	color: var(--dark);
+}
+.box-info li .text p {
+	color: var(--dark);	
+}
+.mauto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+
+.bottomfl{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.board{
+    width: 100%;
+    margin: 30px 0 30px 30px;
+    overflow: auto;
+    border-radius: 8px;
+}
+.board img{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.tab{
+    width: 200px;
+}
+.flexee{
+    display: flex;
+    gap: 2rem;
+    padding-left: 2.5rem;
+}
+.widfu{
+    /* width: 100%; */
+    margin-top: 4rem;
+}
+.td{
+    width: 170px;
+    color: white;
+    text-align: left;
+    margin-left: 5rem;
+}
+.tdval{
+    width: 450px;
+    text-align: left;
+    margin-left: 5rem;
+
+}
+.roun{
+    border-radius: 10px;
+    height: 400px;
+}
+.card {
+    background-clip: padding-box;
+    box-shadow     : 0 1px 4px rgba(24, 28, 33, 0.012);
+}
+.hero{
+    width: 100%;
+    height: 100%;
+     
+}
+.cent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,56 @@
+<div class='sidebar pto'>
+  <h6 class='heading'>MAIN :</h6>
+  <div class='flc'>
+    <a href="/dashboard" onclick="selectDiv(this)" class="activee">
+      <div class='flr'>
+        <img class='icon' src='' alt></img>
+        <h5>Dashboard</h5>
+      </div>
+    </a>
+    <a href="/dashboard/details" onclick="selectDiv(this)" class="activee">
+      <div class='flr'>
+        <img class='icon' src='' alt></img>
+        <h5>Details</h5>
+      </div>
+    </a>
+  </div>
+  <h6 class='heading'>INFORMATION :</h6>
+  <div class='flc'>
+    <a href="" class="activee"  onclick="selectDiv(this)">
+      <div class='flr'>
+        <img class='icon' src='' alt></img>
+        <h5>Check Status</h5>
+      </div>
+    </a>
+    <a href="" class="activee"  onclick="selectDiv(this)">
+      <div class='flr'>
+        <img class='icon' src='' alt></img>
+        <h5>Alert</h5>
+      </div>
+    </a>
+    <a href="/dashboard/attendence"   onclick="selectDiv(this)" class="activee">
+      <div class='flr'>
+        <img class='icon' src='' alt></img>
+        <h5>My Attendence</h5>
+      </div>
+    </a>
+    <a href="" class="activee"  onclick="selectDiv(this)">
+      <div class='flr'>
+        <img class='icon' src='' alt></img>
+        <h5>Help / Support</h5>
+      </div>
+    </a>
+  </div>
+</div>
+
+<script>
+ function selectDiv(selectedDiv) {
+        const divs = document.querySelectorAll('.activee');
+        
+        divs.forEach(div => {
+            div.classList.remove('select');
+        });
+
+        selectedDiv.classList.add('select');
+    }
+</script>

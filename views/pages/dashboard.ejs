@@ -1,0 +1,167 @@
+<%- include('../components/header',{title:"NS-Attendence System",auth:auth,data:data,admin:admin}) %>
+
+  <head>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <div class='flr'>
+
+    <div class='sidebar pto'>
+      <h6 class='heading'>MAIN :</h6>
+      <div class='flc'>
+        <a href="/dashboard" onclick="selectDiv(this)" class="activee select">
+          <div class='flr'>
+            <img class='icon' src='' alt></img>
+            <h5 class="select">Dashboard</h5>
+          </div>
+        </a>
+        <a href="/dashboard/details" onclick="selectDiv(this)" class="activee">
+          <div class='flr'>
+            <img class='icon' src='' alt></img>
+            <h5>Details</h5>
+          </div>
+        </a>
+      </div>
+      <h6 class='heading'>INFORMATION :</h6>
+      <div class='flc'>
+        <a href="/dashboard/location" class="activee" onclick="selectDiv(this)">
+          <div class='flr'>
+            <img class='icon' src='' alt></img>
+            <h5>Check Bus</h5>
+          </div>
+        </a>
+        <a href="/dashboard/history" class="activee" onclick="selectDiv(this)">
+          <div class='flr'>
+            <img class='icon' src='' alt></img>
+            <h5>History</h5>
+          </div>
+        </a>
+        <a href="/dashboard/attendence" onclick="selectDiv(this)" class="activee">
+          <div class='flr'>
+            <img class='icon' src='' alt></img>
+            <h5>My Attendence</h5>
+          </div>
+        </a>
+        <a href="/dashboard/support" class="activee" onclick="selectDiv(this)">
+          <div class='flr'>
+            <img class='icon' src='' alt></img>
+            <h5>Help / Support</h5>
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="bottomfl">
+
+      <h1>
+        <%= data.name %>
+      </h1>
+
+      <ul class="box-info">
+
+        <li>
+          <i class='bx bxs-calendar-check'></i>
+          <span class="text">
+            <h3>
+              <% if(data.details){ %>
+                <%= data.details.cgpa%>
+                <% } %>
+                    <% if(!data.details){ %>
+                      8.50
+                        <% } %>
+            </h3>
+            <p>CGPA</p>
+          </span>
+        </li>
+        <li>
+          <i class='bx bxs-group'></i>
+          <span class="text">
+            <h3>100%</h3>
+            <p>Attendence</p>
+          </span>
+        </li>
+        <li>
+          <i class='bx bxs-dollar-circle'></i>
+          <span class="text">
+            <h3>18</h3>
+            <p>Project Count</p>
+          </span>
+        </li>
+        <li>
+          <i class='bx bxs-group'></i>
+          <span class="text">
+            <h3>2834</h3>
+            <p>Visited</p>
+          </span>
+        </li>
+      </ul>
+
+      <div class=" my-3 flexee aut">
+        <div>
+          <img class="roun" src="https://www.rajalakshmi.org/QRCode/img/<%= data.rollno %>.jpg" alt="IDCARDPhoto"><br>
+        </div>
+        <div class="tab">
+          <h5>Short Info </h5>
+          <table class="widfu">
+            <tr>
+              <td>
+                <h2 class="td">Name </h2>
+              </td>
+              <td>
+                <h2 class="tdval">
+                  : <%= data.name %>
+                </h2>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2 class="td">Deptartment </h2>
+              </td>
+              <td>
+                <h2 class="tdval">: CSE</h2>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2 class="td">Roll No</h2>
+              </td>
+              <td>
+                <h2 class="tdval">: <%= data.rollno %>
+                </h2>
+              </td>
+            </tr>
+            </tr>
+            <td>
+              <h2 class="td">Bus No</h2>
+            </td>
+            <td>
+              <h2 class="tdval">: 
+                <% if(data.details){ %>
+                  <%= data.details.bus%>
+                  <% } %>
+                      <% if(!data.details){ %>
+                        Fill the details page !
+                          <% } %>
+              </h2>
+            </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+
+
+
+
+
+    </div>
+
+
+  </div>
+
+  </div>
+
+  </div>
+
+  </div>
+  <%- include('../components/footer') %>
