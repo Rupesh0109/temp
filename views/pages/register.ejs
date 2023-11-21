@@ -1,4 +1,4 @@
-<%- include('../components/header',{title:'Register-Laundry',auth:auth,data:data,admin:admin});%>
+<%- include('Header.ejs',{title:'Register-Laundry',auth:auth,data:data,admin:admin});%>
     <div id="register">
 
         <div class='body'>
@@ -231,4 +231,4 @@
                     return isValid
                 }
             </script>
-            <%- include('../components/footer') %>
+            <%- include('Footer.ejs') %>

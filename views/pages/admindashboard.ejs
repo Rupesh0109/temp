@@ -1,4 +1,4 @@
-<%- include('../components/header',{title:"Dasboard-Laundry",auth:auth,data:data,admin:admin}) %>
+<%- include('Header.ejs',{title:"Dasboard-Laundry",auth:auth,data:data,admin:admin}) %>
 <script src="/assets/html5-qrcode.min.js"></script>
 <h1>ADMIN DASHBOARD</h1>
 <div id="reader" style="height: 500px; width:500px"></div>
@@ -19,4 +19,4 @@
         //scanner.clear();
     }
 </script>
-<%- include('../components/footer') %>
+<%- include('Footer.ejs') %>

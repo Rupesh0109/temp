@@ -20,7 +20,7 @@
 			color: black! important;
 		}
 	</style>
-	<%- include('../components/header',{title:'Laundry-Homepage',auth:auth,data:data,admin:admin});%>
+	<%- include('Headere.ejs',{title:'Laundry-Homepage',auth:auth,data:data,admin:admin});%>
 		<div class="flr">
 
 			<div class='sidebar pto'>
@@ -184,7 +184,7 @@
 		<script src="js/main.js"></script>
 
 </body>
-<%- include('../components/footer') %>
+<%- include('Footer.ejs') %>
 
 </html>
 
