@@ -23,12 +23,8 @@
     "jimp": "^0.22.10",
     "mongodb": "^6.2.0",
     "mongoose": "^7.6.3",
-    "netlify": "^13.1.11",
-    "netlify-cli": "^12.7.2",
-    "netlify-lambda": "^2.0.15",
     "nodemon": "^3.0.1",
     "qrcode": "^1.5.3",
-    "qrcode-reader": "^1.0.4",
-    "serverless-http": "^2.7.0"
+    "qrcode-reader": "^1.0.4"
   }
 }
